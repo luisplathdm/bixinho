@@ -1,7 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="bixinho.MainPage"                   
-             BackgroundColor="#000000">
+             x:Class="bixinho.MainPage"             
+            Shell.NavBarIsVisible="false">
+  <Grid>    
+   
+      <Image 
+         Source="capa.png"
+         Aspect="AspectFill" 
+         Grid.Row="0"/>
 
-          <ContentPage>
+      <Label
+         FontFamily="Magic Retro.ttf"
+         Text="Mathematics pets"
+         TextColor="#36566e"
+         FontSize="45"
+         HorizontalOptions="Center"
+         HorizontalTextAlignment="Center"
+         />
+
+
+ <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="0"/>
+          <RowDefinition Height="0"/>
+          <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </Grid>
+ </ContentPage>
