@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bixinho.MainPage"             
             Shell.NavBarIsVisible="false">
-  <Grid>    
+ <Grid>    
    
       <Image 
-         Source="capa.png"
-         Aspect="AspectFill" 
-         Grid.Row="0"/>
+         Source="fundo.png"
+         Opacity="7"
+         Aspect="AspectFill" />
 
       <Label
          FontFamily="Magic Retro.ttf"
@@ -17,7 +17,9 @@
          FontSize="45"
          HorizontalOptions="Center"
          HorizontalTextAlignment="Center"
-         />
+         Margin="10, 80, 10, 0"/>
+
+         
 
 
  <Grid.RowDefinitions>
