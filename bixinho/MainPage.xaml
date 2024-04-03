@@ -4,42 +4,19 @@
              x:Class="bixinho.MainPage"             
             Shell.NavBarIsVisible="false">
  <Grid>    
-   
-      <Image 
-         Source="fundo.png"
-         Opacity="7"
-         Aspect="AspectFill" />
 
-      <Label
-         FontFamily="Magic Retro.ttf"
-         Text="Mathematics pets"
-         TextColor="#36566e"
-         FontSize="45"
-         HorizontalOptions="Center"
-         HorizontalTextAlignment="Center"
-         Margin="10, 80, 10, 0"/>
-
+       <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="0"/>
+      </Grid.RowDefinitions>
+            
          
-
-
- <Grid.RowDefinitions>
-          <RowDefinition Height="*"/>
-          <RowDefinition Height="0"/>
-          <RowDefinition Height="0"/>
-          <RowDefinition Height="0"/>
-        </Grid.RowDefinitions>
-
-
-
-
-
-
-
-
-
-
-
-
+         <Image Source="elefante.jpg"/>
+         <Image x:Name="imagemdopersonagem"/>
+         <ProgressBar x:Name="prog"
+          Grid.R = "1"/>
 
   </Grid>
  </ContentPage>
