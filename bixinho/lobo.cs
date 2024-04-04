@@ -1,12 +1,12 @@
-namespace lobo;
+namespace bixinho;
 
-public partial class lobo: bixos
+public  class Lobo: bixos
 {
-	public lobo()
+	public Lobo()
 	{
-		tristeza = 0,5;
+		tristeza = 0.5;
 		fome = 1;
         memoria = 1;
-        NomeFoto = "lobo.wepb";
+        NomeFoto = "";
 	}
 }

@@ -1,10 +1,10 @@
-namespace macaco;
+namespace bixinho;
 
-public partial class macaco: bixos
+public class Macaco: bixos
 {
-	public macaco()
+	public Macaco()
 	{
-		tristeza = 0,5;
+		tristeza = 0.5;
 		fome = 1;
         memoria = 1;
         NomeFoto = "macaco.jpg";

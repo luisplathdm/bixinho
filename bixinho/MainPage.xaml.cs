@@ -5,25 +5,25 @@ namespace bixinho;
 public partial class MainPage : ContentPage
 
 {
-	elefante Elefantão;
-	lobo Lobão;
-	macaco Cesar;
-	Personagem atual;
+	Elefante Elefantao;
+	Lobo Lobao;
+	Macaco Cesar;
+	bixos atual;
 
 
 	public MainPage()
 	{
 		InitializeComponent();
 
-		imgpersonagem.Source = "elefante.jpg";
-		Elefantão = new elefante();
-		Lobão = new lobo();
-		Cesar = new macaco();
+		imagemdopersonagem.Source = "elefante.jpg";
+		Elefantao = new Elefante();
+		Lobao = new Lobo();
+		Cesar = new Macaco();
 
-		atual = Elefantão;
+		atual = Elefantao;
 
-		imagemdopersonagem.Source = atual.GetNomeDaFoto();
+		imagemdopersonagem.Source = atual.GetNomeFoto();
 	}
 	
-
+	
 }

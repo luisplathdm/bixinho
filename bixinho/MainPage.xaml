@@ -3,20 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bixinho.MainPage"             
             Shell.NavBarIsVisible="false">
+ 
+        <Image Source="elefante.jpg" />
+         <Image x:Name="imagemdopersonagem"/>
+        
  <Grid>    
 
        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="0"/>
-            <RowDefinition Height="0"/>
-            <RowDefinition Height="0"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="90"/>
       </Grid.RowDefinitions>
-            
-         
-         <Image Source="elefante.jpg"/>
-         <Image x:Name="imagemdopersonagem"/>
-         <ProgressBar x:Name="prog"
-          Grid.R = "1"/>
+        
+         <ProgressBar x:Name="BarrinhaProgresso"
+          Grid.Row = "0"/>
+         <ProgressBar x:Name="BarrinhaProgreso"
+          Grid.Row = "1"/>
+         <ProgressBar x:Name="BarrinhaProgress"
+          Grid.Row = "2"/>
 
   </Grid>
  </ContentPage>
+
+ <//está faltando a configuração da mainpage e o grid collumns//> 
