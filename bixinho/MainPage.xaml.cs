@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-		imagemdopersonagem.Source = "elefante.jpg";
+		imagemdopersonagem.Source = "elefante.png";
 		Elefantao = new Elefante();
 		Lobao = new Lobo();
 		Cesar = new Macaco();

@@ -7,7 +7,7 @@ public class Macaco: bixos
 		tristeza = 0.5;
 		fome = 1;
         memoria = 1;
-        NomeFoto = "macaco.jpg";
+        NomeFoto = "macaco.png";
 	}
 }
 

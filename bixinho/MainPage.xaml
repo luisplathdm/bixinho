@@ -1,29 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="bixinho.MainPage"             
-            Shell.NavBarIsVisible="false">
- 
-        <Image Source="elefante.jpg" />
-         <Image x:Name="imagemdopersonagem"/>
-        
- <Grid>    
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="bixinho.MainPage"             
+       Shell.NavBarIsVisible="false">
+   
+      <Grid>    
 
-       <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="90"/>
-      </Grid.RowDefinitions>
-        
-         <ProgressBar x:Name="BarrinhaProgresso"
-          Grid.Row = "0"/>
-         <ProgressBar x:Name="BarrinhaProgreso"
-          Grid.Row = "1"/>
-         <ProgressBar x:Name="BarrinhaProgress"
-          Grid.Row = "2"/>
+            <Grid.RowDefinitions>
+                  <RowDefinition Height="20"/>
+                  <RowDefinition Height="20"/>
+                  <RowDefinition Height="20"/>
+                  <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-  </Grid>
+            <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width= "0"/>
+                  <ColumnDefinition Width= "*"/>
+                  <ColumnDefinition Width= "*"/>
+                  <ColumnDefinition Width= "*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="elefante.png"/>
+           
+            <Image x:Name="imagemdopersonagem"/>
+                  
+                  <ImageButton Source="lobo.png"
+                        Grid.Column="1"
+                         Grid.Row = "3"
+                        Aspect="AspectFill"/>
+                  
+                  <ProgressBar 
+                        x:Name="BarrinhaProgresso"
+                        Grid.Row = "0"/>
+                  
+                  <ProgressBar 
+                        x:Name="BarrinhaProgreso"
+                        Grid.Row = "1"/>
+                  
+                  <ProgressBar 
+                        x:Name="BarrinhaProgress"
+                        Grid.Row = "2"/>
+
+      </Grid>
  </ContentPage>
 
- <//está faltando a configuração da mainpage e o grid collumns//> 
