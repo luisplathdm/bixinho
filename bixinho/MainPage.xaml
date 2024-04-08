@@ -4,43 +4,79 @@
        x:Class="bixinho.MainPage"             
        Shell.NavBarIsVisible="false">
    
-      <Grid>    
-
-            <Grid.RowDefinitions>
-                  <RowDefinition Height="20"/>
-                  <RowDefinition Height="20"/>
-                  <RowDefinition Height="20"/>
+      <Grid>   
+             <Grid.RowDefinitions>
+                  <RowDefinition Height="200"/>
+                  <RowDefinition Height="250"/>
+                  <RowDefinition Height="200"/>
+                  <RowDefinition Height="*"/>
                   <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+             <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions> 
+
+            <Image 
+            x:Name="imagemdopersonagem"
+            Aspect="AspectFill" 
+            Grid.RowSpan="5"
+            Grid.ColumnSpan="2"/>
+        
+
+                  <Frame x:Name="Barras"
+                  Grid.ColumnSpan="2"
+                  HeightRequest="120"
+                  Padding="10"
+                  CornerRadius="30"
+                  Opacity="1"
+                  BackgroundColor="#55d0d0d0">
+                   
+      <Grid>
             <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width= "0"/>
-                  <ColumnDefinition Width= "*"/>
-                  <ColumnDefinition Width= "*"/>
-                  <ColumnDefinition Width= "*"/>
+                  <ColumnDefinition Width="50"/>
+                  <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Image Source="elefante.png"/>
-           
-            <Image x:Name="imagemdopersonagem"/>
-                  
+            <Grid.RowDefinitions>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
                   <ImageButton Source="lobo.png"
-                        Grid.Column="1"
-                         Grid.Row = "3"
+                        Grid.Row = "0"
+                        Grid.Column="0"
+                        Aspect="AspectFill"/>
+
+                  <ImageButton Source="macaco.png"                    
+                        Grid.Row = "1"
+                        Grid.Column="0"
+                        Aspect="AspectFill"/>
+
+                  <ImageButton Source="elefante.png"  
+                        Grid.Row = "2"
+                        Grid.Column="0"
                         Aspect="AspectFill"/>
                   
                   <ProgressBar 
                         x:Name="BarrinhaProgresso"
-                        Grid.Row = "0"/>
-                  
+                        Grid.Row = "0"
+                        Grid.Column="1"/>
+
                   <ProgressBar 
                         x:Name="BarrinhaProgreso"
-                        Grid.Row = "1"/>
+                        Grid.Row = "1"
+                         Grid.Column="1"/>
                   
                   <ProgressBar 
                         x:Name="BarrinhaProgress"
-                        Grid.Row = "2"/>
-
-      </Grid>
+                        Grid.Row = "2"
+                        Grid.Column="1"/>
+              </Grid>    
+          </Frame>
+     </Grid>
  </ContentPage>
 
