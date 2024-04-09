@@ -8,6 +8,6 @@ public  class Lobo: bixos
 		fome = 1;
         memoria = 1;
         NomeFoto = "lobo.png";
-		NomeFotoMorto = "";
+		NomeFotoMorto = "lapide.png";
 	}
 }

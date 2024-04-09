@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace bixinho;
 
 public class bixos
@@ -48,6 +50,12 @@ public class bixos
         else 
             tristeza = f;
     }
+
+     public double Gettristeza()
+     {
+        return tristeza;
+     }
+    
     public void SetFome (double s)
     {
        if (s > 1)
@@ -60,6 +68,11 @@ public class bixos
         else 
             fome = s;
     }
+      public double Getfome()
+        {
+            return fome;
+        }
+            
 
     public void SetMemoria (double e)
     {
@@ -74,5 +87,9 @@ public class bixos
             memoria = e;
     }
     
+    public double Getmemoria()
+    {
+        return memoria;
+    }
 
 }

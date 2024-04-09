@@ -20,12 +20,14 @@
 
             <Image 
             x:Name="imagemdopersonagem"
-            Aspect="AspectFill" 
-            Grid.RowSpan="5"
+            Aspect="Center" 
+            Margin="20, 100, 20, 0"
+            Grid.RowSpan="3"
             Grid.ColumnSpan="2"/>
         
 
                   <Frame x:Name="Barras"
+                  Margin= "10, 0, 10, 50"
                   Grid.ColumnSpan="2"
                   HeightRequest="120"
                   Padding="10"
@@ -49,33 +51,92 @@
                   <ImageButton Source="tristeza.png"
                         Grid.Row = "0"
                         Grid.Column="0"
-                        Aspect="AspectFill"/>
+                        Aspect="AspectFill"
+                         CornerRadius="30"/>
 
                   <ImageButton Source="confusao.png"                    
                         Grid.Row = "1"
                         Grid.Column="0"
-                        Aspect="AspectFill"/>
+                        Aspect="AspectFill"
+                        CornerRadius="30"/>
 
                   <ImageButton Source="fome.png"  
                         Grid.Row = "2"
                         Grid.Column="0"
-                        Aspect="AspectFill"/>
+                        Aspect="AspectFill"
+                        CornerRadius="30"/>
                   
                   <ProgressBar 
-                        x:Name="BarrinhaProgresso"
+                        x:Name="Progressotristeza"
                         Grid.Row = "0"
                         Grid.Column="1"/>
 
                   <ProgressBar 
-                        x:Name="BarrinhaProgreso"
+                        x:Name="Progressoconfusao"
                         Grid.Row = "1"
                         Grid.Column="1"/>
                   
                   <ProgressBar 
-                        x:Name="BarrinhaProgress"
+                        x:Name="Progressofome"
                         Grid.Row = "2"
                         Grid.Column="1"/>
               </Grid>    
+          </Frame>
+
+
+          <Frame x:Name="Escolhas"
+                  Margin= "10, 0, 10, 50"
+                  Grid.ColumnSpan="2"
+                  Grid.Row="4"
+                  HeightRequest="120"
+                  Padding="10"
+                  CornerRadius="30"
+                  Opacity="1"
+                  BackgroundColor="#99d0d0d0">
+                   
+      <Grid>
+            <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                  <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <ImageButton Source="tristeza.png"
+                  Clicked="ProgressoTristeza"
+                  Grid.Row = "0"
+                  Grid.Column="0"
+                  Aspect="AspectFill"
+                  CornerRadius="30"/>
+
+            <ImageButton Source="confusao.png"
+                  Clicked="ProgressoConfusao"
+                  Grid.Row = "0"
+                  Grid.Column="1"
+                  Aspect="AspectFill"
+                  CornerRadius="30"/>
+
+            <ImageButton Source="fome.png"
+                  Clicked="ProgressoFome"
+                  Grid.Row = "0"
+                  Grid.Column="2"
+                  Aspect="AspectFill"
+                  CornerRadius="30"/>
+
+             <ImageButton Source="seta.png"
+                  Clicked="TrocaBixos"
+                  Grid.Row = "0"
+                  Grid.Column="3"
+                  Aspect="AspectFill"
+                  CornerRadius="30"/>
+
+
+                  </Grid>    
           </Frame>
      </Grid>
  </ContentPage>

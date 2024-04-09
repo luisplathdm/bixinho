@@ -8,7 +8,7 @@ public class Elefante: bixos
 		fome = 1;
         memoria = 1;
         NomeFoto = "elefante.png";
-		NomeFotoMorto = "";
+		NomeFotoMorto = "lapide.png";
 	}
 }
 
