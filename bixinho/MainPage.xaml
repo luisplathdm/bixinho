@@ -31,7 +31,7 @@
                   Padding="10"
                   CornerRadius="30"
                   Opacity="1"
-                  BackgroundColor="#55d0d0d0">
+                  BackgroundColor="#99d0d0d0">
                    
       <Grid>
             <Grid.ColumnDefinitions>
@@ -46,17 +46,17 @@
             </Grid.RowDefinitions>
 
 
-                  <ImageButton Source="lobo.png"
+                  <ImageButton Source="tristeza.png"
                         Grid.Row = "0"
                         Grid.Column="0"
                         Aspect="AspectFill"/>
 
-                  <ImageButton Source="macaco.png"                    
+                  <ImageButton Source="confusao.png"                    
                         Grid.Row = "1"
                         Grid.Column="0"
                         Aspect="AspectFill"/>
 
-                  <ImageButton Source="elefante.png"  
+                  <ImageButton Source="fome.png"  
                         Grid.Row = "2"
                         Grid.Column="0"
                         Aspect="AspectFill"/>
@@ -69,7 +69,7 @@
                   <ProgressBar 
                         x:Name="BarrinhaProgreso"
                         Grid.Row = "1"
-                         Grid.Column="1"/>
+                        Grid.Column="1"/>
                   
                   <ProgressBar 
                         x:Name="BarrinhaProgress"

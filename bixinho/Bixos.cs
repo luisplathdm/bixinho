@@ -4,11 +4,12 @@ public class bixos
 
 {
 
-    public double   tristeza ;
-    public double   fome;
-    public double   memoria;
-    public string   NomeFoto;
-  
+    protected double   tristeza ;
+    protected double   fome;
+    protected double   memoria;
+    protected string   NomeFoto;
+    protected string   NomeFotoMorto;
+    protected bool Morto;
     public bixos()
      {
      tristeza = 0;
@@ -16,37 +17,61 @@ public class bixos
      memoria = 0;
      NomeFoto = "";
     }
+
+  public void SetMorto(bool M)
+     { 
+      Morto=M;
+     }
+
+      public bool GetMorto()
+      {
+      return Morto;
+      }
  public string GetNomeFoto()
     {
+       
+        if (Morto)
+        return  NomeFotoMorto;
+        else 
         return NomeFoto;
+        
     }
     public void SetTristeza (double f)
     {
-        if (f >= 0 && f <= 1)
-        tristeza = f;
-        else if (f > 1)
-        tristeza = 1;
+        if (f > 1)
+            tristeza = 1;
         else if (f > 0)
-        tristeza = 0;
+        {
+            tristeza = 0;
+            Morte = true;
+        }
+        else 
+            tristeza = f;
     }
     public void SetFome (double s)
     {
-        if (s >= 0 && s <= 1)
-        fome = s;
-        else if (s > 1)
-        fome = 1;
+       if (s > 1)
+            fome = 1;
         else if (s > 0)
-        fome = 0;
+        {
+            fome = 0;
+            Morte = true;
+        }
+        else 
+            fome = s;
     }
 
     public void SetMemoria (double e)
     {
-        if (e >= 0 && e <= 1)
-        memoria = e;
-        else if (e > 1)
-        memoria = 1;
+       if (s > 1)
+            memoria= 1;
         else if (e > 0)
-        memoria = 0;
+        {
+            memoria = 0;
+            Morte = true;
+        }
+        else 
+            memoria = e;
     }
     
 

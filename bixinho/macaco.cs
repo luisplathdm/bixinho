@@ -8,6 +8,8 @@ public class Macaco: bixos
 		fome = 1;
         memoria = 1;
         NomeFoto = "macaco.png";
+        NomeFotoMorto = "";
+
 	}
 }
 
