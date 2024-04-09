@@ -43,7 +43,7 @@ public class bixos
         else if (f > 0)
         {
             tristeza = 0;
-            Morte = true;
+            Morto = true;
         }
         else 
             tristeza = f;
@@ -55,7 +55,7 @@ public class bixos
         else if (s > 0)
         {
             fome = 0;
-            Morte = true;
+            Morto = true;
         }
         else 
             fome = s;
@@ -63,12 +63,12 @@ public class bixos
 
     public void SetMemoria (double e)
     {
-       if (s > 1)
+       if (e > 1)
             memoria= 1;
         else if (e > 0)
         {
             memoria = 0;
-            Morte = true;
+            Morto = true;
         }
         else 
             memoria = e;
