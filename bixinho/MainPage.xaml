@@ -60,7 +60,7 @@
                         Aspect="AspectFill"
                         CornerRadius="30"/>
 
-                  <ImageButton Source="fome.png"  
+                  <ImageButton Source="fome.png" 
                         Grid.Row = "2"
                         Grid.Column="0"
                         Aspect="AspectFill"
@@ -85,7 +85,7 @@
 
 
           <Frame x:Name="Escolhas"
-                  Margin= "10, 0, 10, 50"
+                  VerticalOptions="End"
                   Grid.ColumnSpan="2"
                   Grid.Row="4"
                   HeightRequest="120"

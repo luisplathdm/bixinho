@@ -5,9 +5,9 @@ namespace bixinho;
 public partial class MainPage : ContentPage
 
 {
-	Elefante Elefantao;
-	Lobo Lobao;
-	Macaco Cesar;
+	Elefante Elefantao = new Elefante();
+	Lobo Lobao  = new Lobo();
+	Macaco Cesar = new Macaco();
 	bixos atual;
 
 
@@ -16,9 +16,8 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 
 		imagemdopersonagem.Source = "elefante.png";
-		Elefantao = new Elefante();
-		Lobao = new Lobo();
-		Cesar = new Macaco();
+		
+		
 
 		atual = Elefantao;
 
@@ -28,15 +27,26 @@ public partial class MainPage : ContentPage
 		AtualizaBixos();
 
 		var timer = Application.Current.Dispatcher.CreateTimer();
-		timer.Interval = TimeSpan.FromSeconds(100);
+		timer.Interval = TimeSpan.FromSeconds(1);
 		timer.Tick += (s,e) => 
 		PassouTempo(); 
 		timer.Start();
 	}
 	void PassouTempo()
 	{
+		var Comoatualesta = atual.GetMorto();
+		atual.SetTristeza(atual.Gettristeza() - 0.01);
+		AtualizaBixos();
+		atual.SetFome(atual.Getfome() - 0.01);
+		AtualizaBixos();
+		atual.SetMemoria(atual.Getmemoria() - 0.01);
+		AtualizaBixos();
+		if(Comoatualesta != atual.morto)
+		imagemdopersonagem.Source = atual.GetNomeFoto();
 		
-	}
+
+   	}
+	
 	
 
 	void AtualizaBixos()
@@ -67,17 +77,17 @@ public partial class MainPage : ContentPage
 
    private void ProgressoTristeza(object sender, EventArgs args)
    	{
-      	atual.SetTristeza(atual.Gettristeza() + 0.1);
+      	atual.SetTristeza(atual.Gettristeza() + 0.01);
 		AtualizaBixos();
    	}
    private void ProgressoFome(object sender, EventArgs args)
    	{
-      	atual.SetTristeza(atual.Getfome() + 0.1);
+      	atual.SetFome(atual.Getfome() + 0.01);
 		AtualizaBixos();
    	}
    private void ProgressoConfusao(object sender, EventArgs args)
    	{
-      	atual.SetTristeza(atual.Getmemoria() + 0.1);
+      	atual.SetMemoria(atual.Getmemoria() + 0.01);
 		AtualizaBixos();
    	}
 }

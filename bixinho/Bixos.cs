@@ -28,6 +28,7 @@ public class bixos
       public bool GetMorto()
       {
       return Morto;
+      
       }
  public string GetNomeFoto()
     {
@@ -42,7 +43,7 @@ public class bixos
     {
         if (f > 1)
             tristeza = 1;
-        else if (f > 0)
+        else if (f <= 0)
         {
             tristeza = 0;
             Morto = true;
@@ -60,7 +61,7 @@ public class bixos
     {
        if (s > 1)
             fome = 1;
-        else if (s > 0)
+        else if (s <= 0)
         {
             fome = 0;
             Morto = true;
@@ -78,7 +79,7 @@ public class bixos
     {
        if (e > 1)
             memoria= 1;
-        else if (e > 0)
+        else if (e <= 0)
         {
             memoria = 0;
             Morto = true;
