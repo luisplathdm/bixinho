@@ -11,7 +11,7 @@ public class bixos
     protected double   memoria;
     protected string   NomeFoto;
     protected string   NomeFotoMorto;
-    protected bool Morto;
+    public bool Morto;
     public bixos()
      {
      tristeza = 0;

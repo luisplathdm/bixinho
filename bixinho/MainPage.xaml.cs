@@ -41,7 +41,7 @@ public partial class MainPage : ContentPage
 		AtualizaBixos();
 		atual.SetMemoria(atual.Getmemoria() - 0.01);
 		AtualizaBixos();
-		if(Comoatualesta != atual.morto)
+		if(Comoatualesta != atual.Morto)
 		imagemdopersonagem.Source = atual.GetNomeFoto();
 		
 
